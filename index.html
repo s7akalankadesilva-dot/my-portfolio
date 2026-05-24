@@ -268,8 +268,7 @@
     .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,.08); transform: translateY(-2px); }
 
     /* =============================================
-       HERO PHOTO PLACEHOLDER
-       Replace src="profile.jpg" once ready.
+       HERO PHOTO STYLING
     ============================================= */
     .hero-photo-wrap {
       flex: 0 0 auto;
@@ -282,8 +281,6 @@
       object-fit: cover;
       border: 5px solid rgba(255,255,255,.30);
       box-shadow: 0 20px 60px rgba(0,0,0,.3);
-      background: rgba(255,255,255,.10);  /* shown when photo missing */
-      display: flex; align-items: center; justify-content: center;
     }
     /* Decorative ring around photo */
     .hero-photo-wrap::after {
@@ -294,23 +291,6 @@
       animation: spin 18s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* Photo placeholder text (hidden once real photo loads) */
-    .photo-placeholder {
-      width: clamp(220px, 26vw, 320px);
-      height: clamp(220px, 26vw, 320px);
-      border-radius: 50%;
-      border: 5px solid rgba(255,255,255,.30);
-      box-shadow: 0 20px 60px rgba(0,0,0,.3);
-      background: rgba(255,255,255,.10);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 10px;
-      color: rgba(255,255,255,.6);
-      font-size: .82rem; text-align: center;
-      padding: 20px;
-    }
-    .photo-placeholder svg { opacity: .5; }
 
     /* =============================================
        ABOUT SECTION
@@ -617,8 +597,8 @@
                 <img src="profile.jpg" alt="Suchintha Akalanka De Silva" class="hero-photo">
         ============================================ -->
       <div class="hero-photo-wrap">
-          <img src="profile.jpg" alt="Suchintha Akalanka De Silva" class="hero-photo">
-        </div>
+   <img src="profile.jpg" alt="Suchintha Akalanka De Silva" class="hero-photo">
+</div>
 
       </div>
     </div>
